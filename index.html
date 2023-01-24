@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/common.css">
   <link rel="stylesheet" href="styles/index.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap">
   <title>Index</title>
 </head>
 
@@ -17,13 +18,15 @@
     <!-- header div start -->
     <header>
       <img src="./assests/images/logo.png" id="logo" alt="logo">
-      <a href="login.html" target="_self">Login</a>
+      <a href="login.html" target="_self" id="loginButton">Login</a>
     </header>
     <!-- header div end -->
 
     <!-- content div start -->
-    <div id="Content">
-      <div id="search"><input type="text" placeholder="City"></div>
+    <div id="content">
+      <div id="search">
+        <input type="text" placeholder="City" id="searchBar">
+      </div>
       <div id="cities">
         <a href="list.html" target="_self"><img
             src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/a2/new-delhi.jpg" class="cityImage"></a>
@@ -31,13 +34,15 @@
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/0f/98/f7/df/charminar.jpg" class="cityImage">
         <img src="https://media-cdn.tripadvisor.com/media/photo-s/15/33/fe/ac/kolkata-calcutta.jpg" class="cityImage">
       </div>
-      <a href="#" target="_self"><u>View more>></u></a>
+      <div id="view">
+        <a href="#" target="_self">View more >></a>
+      </div>
     </div>
     <!-- content div end -->
 
     <!-- footer div start -->
     <footer>
-      <a href="contact.html" target="_self">Contact Us</a>
+      <a href="contact.html" target="_self" id="contactLink">Contact Us</a>
       <div id="social">
         <a href="https://www.facebook.com" target="_blank"><img src="./assests/images/facebook.png"
             class="socialMedia"></a>
@@ -45,7 +50,9 @@
             class="socialMedia"></a>
         <a href="https://twitter.com" target="_blank"><img src="./assests/images/twitter.png" class="socialMedia"></a>
       </div>
-      &copy; 2020 ROOM SEARCH PVT.LTD.
+      <div id="copyright">
+        <span>&copy; 2020 ROOM SEARCH PVT. LTD</span>
+      </div>
     </footer>
     <!-- footer div end -->
 
